@@ -1,38 +1,181 @@
-.App {
-  text-align: center;
+/* ===================================================
+|||||||||||| create new Project
+====================================================== */
+.mainprojectDetals{
+  width: 90%;
+}
+.createNewProject{
+  border:6px crimson solid;
+  width:60vw;
+  height:400px;
+display: flex;
+flex-direction: column;
+ justify-content: space-around;
+align-items: center; 
+  border-radius: 100px;
+}
+.parentCard{
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-evenly;
+}
+.headTasks{
+  display: flex;
+  justify-content: center;
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
-}
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.parentcreateNewProject{
   display: flex;
   flex-direction: column;
   align-items: center;
   justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+  height:100vh;
+}
+.headCreateNewProject{
+  display: flex;
+  justify-content: center;
+}
+.headCreateNewProject>h1{
+font-size: 60px;
+color: gray;
+letter-spacing: 15px;
+font-weight: 100;
+}
+.childcreateNewProject{
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 100%;
+  justify-content: center;
+  height: 50%;
+}
+.childcreateNewProject>P{
+  font-size: 30px;
+color: gray;
+letter-spacing: 5px;
+font-weight: 500;
+}
+.childcreateNewProject>input{
+  width:60%;
+  height:50px;
+  padding-left: 20px;
+  padding-right: 20px;
+  font-size: 22px;
+  letter-spacing: 2px;
+}
+.newProjectButton{
+
+  width:300px;
+  height:50px;
+  background-color: lightgray;
+  color: crimson;
+  font-size: 30px;
+  border-radius: 5px;
+  
+
+}
+.cardTask{
+  width:300px;
+  height:350px;
+  border:2px gray solid;
+  border-radius: 10px;
+  display:flex ;
+  flex-direction: column;
+  justify-content: center;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+.cardTask>div{
+display: flex;
+justify-content: space-between;
+}
+.details{
+  display: flex !important;
+  justify-content: center !important;
+  align-items: center;
+}
+.details>button{
+  width:100px;
+  height: 40px;
+}
+/* ===================================================
+|||||||||||| Project Details
+====================================================== */
+
+.headprojectDetails>h1{
+  font-size: 60px;
+color: gray;
+letter-spacing: 15px;
+font-weight: 100;
+text-align: center;
+}
+.projectDetails{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+.childProjectDetails{
+  display: flex;
+  width:250px;
+  justify-content: space-between;
+}
+.childProjectDetails>p{
+  font-size: 20px;
+  font-weight: 700;
+}
+.createNewTask{
+  height: 60px;
+
 }
 
-.App-link {
-  color: #61dafb;
+@media screen and (max-width: 1400px) {
+  .headCreateNewProject>h1{
+    font-size: 40px;
+    font-weight: 500;
+    letter-spacing: 8px;
+
+    }
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+@media screen and (max-width: 1000px) {
+  .headCreateNewProject>h1{
+    font-size: 30px;
+    font-weight:500;
+    letter-spacing: 5px;
+    }
 }
+
+@media screen and (max-width: 800px) {
+  .projectDetails>div{
+    width:85vw !important;
+    text-align: center;
+    /* display: flex;
+    justify-content: center; */
+  }
+  .projectDetails{
+    display: inline-block !important;
+  }
+.createNewProject{
+  width: 90vw;
+  margin-top: 50px;
+}
+.newProjectButton{
+  width: 200px;
+}
+.childcreateNewProject>input{
+  width:80%;
+  height:50px;
+  padding-left: 10px;
+  padding-right: 10px;
+  font-size: 20px;
+  letter-spacing: 2px;
+}
+}
+@media screen and (max-width: 450px) {
+  .headCreateNewProject>h1{
+    font-size: 25px;
+    font-weight:500;
+    letter-spacing: 2px;
+    }
+
+  }
